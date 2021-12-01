@@ -1,0 +1,45 @@
+{
+  "name": "react-treeview",
+  "version": "0.1.0",
+  "description": "Easy, light, flexible tree view made with React.",
+  "main": "lib/react-treeview.js",
+  "directories": {
+    "demos": "demos"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development node server.js",
+    "lint": "eslint src demos",
+    "build-demos": "NODE_ENV=production webpack -p",
+    "prerelease": "babel src --out-dir lib && NODE_ENV=production webpack --config webpack.prod.config.js"
+  },
+  "keywords": [
+    "facebook",
+    "react",
+    "treeview",
+    "tree-view",
+    "tree",
+    "view",
+    "treenode",
+    "tree-node",
+    "ui",
+    "react-component"
+  ],
+  "peerDependencies": {
+    "react": ">=0.14.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.1",
+    "eslint-plugin-react": "^3.5.1",
+    "prop-types": "^15.5.10",
+    "react": ">=15.0.0",
+    "react-dom": ">=15.0.0",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.8"
+  }
+}
